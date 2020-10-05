@@ -1,0 +1,511 @@
+*,:before,:after{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+/*font-family: 'Ubuntu', sans-serif;*/
+	font-size: 16px;
+	background-color: #fff;
+	color: #111;
+	/*-webkit-font-smoothing:antialiased;*/	
+
+}
+
+
+/*conteiner
+==========================*/
+.container{
+	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+/*
+screen-sm : 576px;
+screen-md : 768px;
+screen-lg : 992px; v
+screen-xl : 1200px; v
+
+screen-sm-max : 767px
+screen-md-max : 991px
+screen-lg-max : 1999px
+
+*/
+
+
+/*header
+==========================*/
+.header{
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 2px solid #C3E4DF;
+	align-items: center;
+}
+.name_logo{
+
+	font-size: 20px;
+	color:#fff;
+}
+
+/*nav
+==========================*/
+
+.nav{
+	display: flex;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.nav_link{
+	margin-left: 40px;
+	color: #fff;
+	text-decoration: none;
+	opacity:.7;
+
+	transition: opacity, transform .1s linear;
+}
+
+.nav_link:hover{
+	opacity:1;
+	transform: scale(1.05);
+}
+
+
+
+/*intro
+==========================*/
+.intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	padding-top: 80px;
+	background: #313030 url(img/hero1.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.intro_inner{
+	width: 650px;
+	max-width: 970px;
+	margin-left: 50px;
+
+}
+
+.intro_h1{
+	font-family:'Ubuntu', sans-serif;
+	margin: 0;
+	font-size: 55px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.intro_p{
+	font-size: 25px;
+	color:#fff;
+}
+
+.btn{
+	margin-top: 25px;
+	display: inline-block;
+	border: 0;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 10px 30px;
+	border-radius: 10px;
+	background-color:  #FF8169;
+	border: none;
+	vertical-align: top;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color, transform .1s linear;
+}
+.btn:hover{
+	background-color: #FF6B4D;
+	transform: scale(1.03);
+
+}
+
+
+/*work
+==========================*/
+.work{
+	height: 420px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	color: #111;
+}
+
+.work_inner{
+	padding-top: 40px;
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.text_p{
+	font-size: 24px;
+	font-weight: 400;
+	
+}
+
+.text_h{
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	line-height: 1.1em;
+}
+
+.text_p2{
+	font-size: 20px;
+}
+
+@media (max-width: 991px){
+	.text_p{
+		font-size: 22px;
+	}
+	.text_h{
+		font-size: 45px;
+	}
+	.text_p2{
+		font-size: 18px;
+	}
+}
+
+/*mebel- container
+==========================*/
+.mebel{
+	background-color: #F6FBF7;
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.mebel_text{
+	width: 50%;
+	justify-content: flex-end;
+
+}
+
+.mebel_img{
+	width: 50%;
+	height: 620px;
+	background: url(img/мебель-на-з.jpg) center / cover no-repeat;
+	justify-content: flex-end;
+}
+
+.mebel_a_podrobnee{
+	display: inline-block;
+	color: #2A3B61;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 10px;
+	transition:color, transform .1s linear;
+
+}
+.mebel_a_podrobnee:hover{
+	color: #061840;
+	transform:scale(1.1,1.1);
+}
+
+.divan{
+	display: flex;
+}
+.krovat{
+	display: flex;
+}
+.kreslo{
+	display: flex;
+}
+.puf{
+	display: flex;
+}
+.paneli{
+	display: flex;
+}
+
+@media (max-width: 1999px){
+	.mebel_text{
+		padding: 80px 40px;
+	}
+}
+
+@media (max-width: 991px){
+	.mebel_text{
+		padding: 60px 30px;
+	}
+}
+
+@media (max-width: 767px ){
+	.divan{
+		flex-direction:column;
+	}
+	.krovat{
+		flex-direction:column;
+	}
+	.kreslo{
+		flex-direction:column;
+	}
+	.puf{
+		flex-direction:column;
+	}
+	.paneli{
+		flex-direction:column;
+	}
+	.mebel_img{
+		width: 100%;
+		order: -1;
+		height: 470px;
+	}
+	.mebel_text{
+		width: 100%;
+		padding: 30px 25px;
+	}
+	.text_p{
+		font-size: 20px;
+	}
+	.text_h{
+		font-size: 40px;
+	}
+	.text_p2{
+		font-size: 16px;
+	}
+}
+
+/*srez
+==========================*/
+
+.srez_hed{
+
+	justify-content: center;
+	text-align: center;
+	margin: 40px;
+}
+
+.srez{
+	display: flex;
+}
+
+.srez_img{
+	display: flex;
+	width: 50%;
+	margin-right: 40px;
+
+}
+.srez_text{
+	border-left: 2px solid #C3E4DF;
+	padding: 20px 50px;
+	width: 50%;
+	justify-content: center;
+	text-align: center;
+
+}
+p{
+	margin-bottom: 20px;
+}
+
+@media (max-width: 767px ){
+	.srez{
+		flex-direction: column;
+	}
+	.srez_img{
+		width: 100%;
+	}
+	.srez_text{
+		width: 100%;
+	}
+}
+
+
+/*galery
+==========================*/
+.galery_hed{
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.galery{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.galery_a{
+	width: 49%;
+	height: 500px;
+	background: url(img/мебель-на-з.jpg) center / cover no-repeat;
+	margin-bottom: 2%;
+	text-decoration: none;
+}
+.galery_cont{
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(25,59,70, 0.5);
+	opacity: 0;
+	transition: opacity 0.2s linear;
+}
+.galery_cont:hover{
+	opacity: 1;
+}
+
+@media (max-width: 767px ){
+	.galery{
+		flex-direction: column;
+	}
+	.galery_a{
+		width: 100%;
+	}
+}
+
+/*way
+==========================*/
+
+
+/*time-dev
+==========================*/
+.time_dev{
+	background-color: #F6FBF7;
+	height: 100%;
+	display: block;
+	justify-self: content;
+	text-align: center;
+	padding-bottom: 70px;
+	
+
+}
+.time_text{
+	padding-top: 70px;
+	width: 70%;
+
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+/*forma
+==========================*/
+.forma{
+
+}
+
+.forma_box{
+	display: flex;
+}
+.forma_text{
+	width: 49%;
+	padding: 0 20px;
+}
+
+
+.forma_form{
+	flex-direction: column;
+	width: 49%;
+	margin-left: 50px;
+	border-left: 2px solid #C3E4DF;
+	padding: 0 20px;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+}
+
+.form_label{
+	font-size: 20px;
+}
+.form_input{
+	margin-bottom: 15px;
+	height: 35px;
+	padding: 10px;
+	font-size: 20px;
+	border: 1px solid #75BBB1;
+	border-radius: 5px;
+}
+.form_comm{
+	height: 60px;
+	padding: 10px;
+	font-size: 20px;
+	color: #000;
+	border: 1px solid #75BBB1;
+	border-radius: 5px;
+}
+
+
+.form_btn{
+	margin-top: 25px;
+	display: inline-block;
+	border: 0;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 10px 30px;
+	border-radius: 15px;
+	background-color: #FF8169;
+	border: none;
+	vertical-align: top;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color, transform .2s linear;
+}
+.form_btn:hover{
+	background-color: #FF6B4D;
+	transform: scale(1.03);
+}
+
+@media (max-width: 767px){
+	.forma_box{
+		flex-direction: column;
+	}
+	.forma_text{
+		width: 100%;
+	}
+	.forma_form{
+		width: 100%;
+		margin:30px 0;
+		margin-left: 0;
+		border-left: none;
+	}
+}
+
+
+/*footer
+==========================*/
+.footer{
+	background-color: #193B46;
+	height: 500px;
+}
+
