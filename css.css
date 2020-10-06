@@ -121,6 +121,9 @@ screen-lg-max : 1999px
 }
 
 @media (max-width: 767px ){
+	body.lock{
+		overflow: hidden;
+	}
 	.header_body{
 		height: 50px;
 		background-color: rgb(25,59,70);
@@ -185,9 +188,11 @@ screen-lg-max : 1999px
 		top: -150%;
 		left: 0;
 		width: 100%;
-		height: 500px;
+		height: 100%;
 		background-color: rgb(25,59,70);
 		padding-top: 70px;
+		margin-top: 20px;
+		overflow: auto;
 		font-size: 20px;
 		flex-direction: column;
 		align-items: center;
