@@ -66,28 +66,21 @@ screen-lg-max : 1999px
 	height: 64px;
 	align-items: center;
 	justify-content: space-between;
-
 }
 .header_logo{
 	display: flex;
 	text-decoration: none;
 	color: #fff;
-
-
 }
+
 .logo_name{
 	color: #fff;
 	font-size: 17px;
 	font-weight: 700;
 	margin-top: 16px;
 	margin-left: 20px;
-	
-
-	
 }
-.header_burger{
 
-}
 
 /*nav
 ==========================*/
@@ -130,14 +123,17 @@ screen-lg-max : 1999px
 @media (max-width: 767px ){
 	.header_body{
 		height: 50px;
+		background-color: rgb(25,59,70);
 	}
 
 	.menu_burger{
 		display: block;
 		position: relative;
+		z-index: 3;
 		width: 30px;
 		height: 21px;
 		margin-right: 20px;
+
 		
 	}
 	.menu_burger span{
@@ -147,6 +143,7 @@ screen-lg-max : 1999px
 		height: 3px;
 		left: 0;
 		top: 9px;
+		transition: all 0.5s ease 0s;
 	}
 
 
@@ -158,6 +155,7 @@ screen-lg-max : 1999px
 		height: 3px;
 		left: 0;
 		top: 0;
+		transition: all 0.5s ease 0s;
 	}
 	.menu_burger:after{
 		content: '';
@@ -167,13 +165,48 @@ screen-lg-max : 1999px
 		height: 3px;
 		left: 0;
 		bottom: 0;
+		transition: all 0.5s ease 0s;
+	}
+
+	.menu_burger.active span{
+		transform: scale(0);
+	}
+	.menu_burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.menu_burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
 	}
 
 	.nav{
-		display: none;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 500px;
+		background-color: rgb(25,59,70);
+		padding-top: 70px;
+		font-size: 20px;
+		flex-direction: column;
+		align-items: center;
+		transition: all 0.5s ease 0s;
+
 	}
-	.name_logo{
-		display: none;
+	.nav.active{
+		top: 0;
+	}
+	.nav_link{
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	.header_logo{
+		z-index: 3;
+
+	}
+	.logo_name{
+
 	}
 
 
@@ -252,7 +285,11 @@ screen-lg-max : 1999px
 
 @media (max-width: 767px){
 .intro_inner{
-	margin-left: 15px;
+	margin-left: 0;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
 	}
 	.intro_h1{
 	font-size: 35px;
