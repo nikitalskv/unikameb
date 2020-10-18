@@ -28,6 +28,7 @@
 				<a class="nav_link" href="index.html">мебель</a>
 				<a class="nav_link" href="serviсes.html">услуги</a>
 				<a class="nav_link" href="about.html">о компании</a>
+				<a class="nav_link" href="gallery.html">проекты</a>
 				<a class="nav_link" href="contact.html">контакты</a>
 				<a class="nav_link" href="#">заказать</a>
 				<a class="nav_link" href="tel:+79200743513">+7 920 074-35-13</a>
@@ -41,14 +42,14 @@
 <!--intro
 ==========================-->
 	<div class="intro">
-
+		<div class="container">
 			<div class="intro_inner">
 				<h1 class="intro_h1">мебель на заказ</h1>
 				<p class="intro_p">Дорогие друзья, социально-экономическое развитие влечет за собой процесс внедрения и модернизации позиций,
 				 занимаемых участниками в отношении поставленных задач.</p>
 				<button class="btn" type="button"> заказать </button>
 			</div>		
-
+		</div>
 	</div>
 
 <!--work
@@ -192,25 +193,25 @@
 
 		<div class="galery">
 
-			<a class="galery_a" href="bedroom.html">
+			<a class="galery_a" href="gallery.html">
 				<div class="galery_cont">
 					<h2 class="">мебель в гостиную</h2>
 				</div>
 			</a>
 
-			<a class="galery_a" href="bedroom.html">	
+			<a class="galery_a" href="gallery.html">	
 				<div class="galery_cont">
 					<h2 class="">мебель в спальню</h2>
 				</div>
 			</a>
 
-			<a class="galery_a" href="bedroom.html">	
+			<a class="galery_a" href="gallery.html">	
 				<div class="galery_cont">
 					<h2 class="">мебель в прихожую</h2>
 				</div>
 			</a>
 
-			<a class="galery_a" href="bedroom.html">	
+			<a class="galery_a" href="gallery.html">	
 				<div class="galery_cont">
 					<h2 class="">мебель на кухню</h2>
 				</div>
@@ -263,33 +264,29 @@
 
 
 			<div class="forma_form">
-				<form class="form" action="#" method="post">
+				<form action="#" class="form" id="form" method="post">
 					
 				
-					<label class="form_label" for="">Ваше имя</label>
-					<input class="form_input" type="text" name="input_name">
+					<label class="form_label" for="formName">Ваше имя</label>
+					<input class="form_input _req" id="formName" type="text" name="name">
 				
 				
-					<label class="form_label" for="">Ваш телефон</label>
-					<input class="form_input" type="tel" name="input_phone">
+					<label class="form_label" for="formPhone">Ваш телефон</label>
+					<input class="form_input _req" id="formPhone" type="tel" name="phone">
 			
 				
-					<label class="form_label" for="">Электронная почта</label>
-					<input class="form_input" type="text" name="input_mail">
+					<label class="form_label" for="formMail">Электронная почта</label>
+					<input class="form_input _req _email" id="formMail" type="text" name="mail">
 				
-					<label class="form_label" for="">Комментарий</label>
-					<textarea class="form_comm" name="form_comm" id="" cols="30" rows="3"></textarea>
+					<label class="form_label" for="formComm">Комментарий:</label>
+					<textarea class="form_comm" id="formComm" name="comm" id="" cols="30" rows="3"></textarea>
 				 	
 					 <div>
-						<input type="checkbox" value="yes" name="input_privat">
-						<label for="">Я даю свое согласие на обработку персональных данных</label>
+						<input class="checkbox _req" type="checkbox" value="yes" name="input_privat">
+						<label for="formSogl">Я даю свое согласие на обработку персональных данных</label>
 					 </div>
-
-					 <div>
-					 	<button class="form_btn">Отправить</button>
-					 	
-					 </div>
-
+					 
+					 <button type="submit" class="form_btn">Отправить</button>	
 
 				</form>
 			</div>
@@ -306,6 +303,7 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="js/js.js"></script>
+<script src="js/form.js"></script>
 
 </body>
 
