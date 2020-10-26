@@ -15,10 +15,11 @@
 <header class="header">
 	<div class="container">
 		<div class="header_body">
-			<a class="header_logo" href="index.html">
-				<img src="img/logo.png" alt="">
-				<h class="logo_name">Уникальная мебель</h>
-			</a>
+			<div class="logname">
+				<a class="header_logo" href="index.html"><img src="img/logoUnikaMebel_white.svg" alt=""></a>
+				<h3 class="logo_name">Уникальная мебель</h3>
+				
+			</div>
 
 			<div class="menu_burger">
 				<span></span>
@@ -74,7 +75,7 @@
 			
 		<div class="mebel">
 			<div class="divan">
-				<div class="mebel_img">divan_img</div>
+				<div class="mebel_img"></div>
 				<div class="mebel_text">
 					<p class="text_p">Диваны</p>
 					<h2 class="text_h">Удобные, удобные и удобные</h2>
@@ -96,13 +97,13 @@
 					 внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
 					 <a href="bedroom.html" class="mebel_a_podrobnee">Узнать подробнее -> </a>
 				</div>
-				<div class="mebel_img">krovat_img</div>
+				<div class="mebel_img"></div>
 			</div>
 		</div>
 			
 		<div class="mebel">
 			<div class="kreslo">
-				<div class="mebel_img">kreslo_img</div>
+				<div class="mebel_img"></div>
 				<div class="mebel_text">
 					<p class="text_p">Кресла</p>
 					<h2 class="text_h">Удобные, удобные и удобные</h2>
@@ -124,13 +125,13 @@
 					 внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
 					 <a href="pouf.html" class="mebel_a_podrobnee">Узнать подробнее -> </a>
 				</div>
-				<div class="mebel_img">puf_img</div>
+				<div class="mebel_img"></div>
 			</div>
 		</div>
 
 		<div class="mebel">
 			<div class="paneli">
-				<div class="mebel_img">paneli_img</div>
+				<div class="mebel_img"></div>
 				<div class="mebel_text">
 					<p class="text_p">Панели</p>
 					<h2 class="text_h">Удобные, удобные и удобные</h2>
@@ -260,11 +261,12 @@
 						орогиедрузья, социально-экономическое развитие влечет за собой процесс внедрения и модернизации позиций,
 						занимаемых участниками в отношении поставленных задач.Дорогие друзья, социально-экономическое развитие влечет за собой процесс
 					 внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+					<p class="text_p">Или позвоните напрямую по номеру: <br> +7 920 074-35-13</p>
 			</div>
 
 
 			<div class="forma_form">
-				<form action="#" class="form" id="form" method="post">
+				<form action="#" id="form" class="form_body"  method="post">
 					
 				
 					<label class="form_label" for="formName">Ваше имя</label>
@@ -279,11 +281,11 @@
 					<input class="form_input _req _email" id="formMail" type="text" name="mail">
 				
 					<label class="form_label" for="formComm">Комментарий:</label>
-					<textarea class="form_comm" id="formComm" name="comm" id="" cols="30" rows="3"></textarea>
+					<textarea class="form_comm" id="formComm" name="comm" cols="30" rows="3"></textarea>
 				 	
-					 <div>
-						<input class="checkbox _req" type="checkbox" value="yes" name="input_privat">
-						<label for="formSogl">Я даю свое согласие на обработку персональных данных</label>
+					 <div class="checkbox">
+						<input id="formAgr" class="checkbox_input _req" checked type="checkbox"  name="agr">
+						<label for="formAgr" class="checkbox_label"><span>Я даю свое согласие на обработку персональных данных</span></label>
 					 </div>
 					 
 					 <button type="submit" class="form_btn">Отправить</button>	
