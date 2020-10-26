@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	
+		.st1{display:inline;fill:#4D4545;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:27;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{display:inline;fill:none;stroke:#FFFFFF;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{display:inline;fill:none;stroke:#FFFFFF;stroke-width:15;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{display:inline;fill:none;stroke:#FFFFFF;stroke-width:34;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Слой_3" class="st0">
+	<rect x="-4.5" y="-16.5" class="st1" width="637" height="621"/>
+</g>
+<g id="KRESLO">
+	<path class="st2" d="M-11.43,122h217.85c31.96,0,57.87,25.91,57.87,57.87v208.12H-11.35"/>
+	<path class="st2" d="M-10.65,309.28h241.81c18.05,0,32.67,13.83,32.67,30.89V449H-9.96"/>
+	<g>
+		<path class="st3" d="M320.7,226.78c23.99,0,43.44,19.45,43.44,43.44s-19.45,43.44-43.44,43.44s-43.44-19.45-43.44-43.44
+			S296.72,226.78,320.7,226.78 M320.7,211.78c-32.22,0-58.44,26.21-58.44,58.44s26.21,58.44,58.44,58.44s58.44-26.21,58.44-58.44
+			S352.93,211.78,320.7,211.78L320.7,211.78z"/>
+	</g>
+	<g>
+		<path class="st3" d="M278.83,310.16c7.38,7.59,16.78,13.17,27.32,15.88V441h-27.32V310.16 M277.32,271.46h-13.49V456h57.32V312.86
+			c-0.15,0-0.3,0.01-0.45,0.01C297.47,312.87,278.49,294.53,277.32,271.46L277.32,271.46z"/>
+	</g>
+	<line class="st4" x1="278.6" y1="454.26" x2="278.6" y2="508"/>
+</g>
+<g id="DIVAN" class="st0">
+	<path class="st5" d="M478.61,479h-65.22c-5.74,0-10.39-4.65-10.39-10.39V197.39c0-5.74,4.65-10.39,10.39-10.39h65.22
+		c5.74,0,10.39,4.65,10.39,10.39v271.22C489,474.35,484.35,479,478.61,479z"/>
+	<path class="st6" d="M-0.22,313.5H402.5V129.52c0-12.16-9.86-22.02-22.02-22.02h-380"/>
+	<line class="st6" x1="440.5" y1="479.5" x2="-0.5" y2="479.5"/>
+	<line class="st7" x1="446.5" y1="479.5" x2="446.5" y2="508.5"/>
+	<line class="st6" x1="403.5" y1="380.5" x2="1.5" y2="380.5"/>
+	<line class="st6" x1="51.5" y1="104.5" x2="51.5" y2="380.5"/>
+</g>
+</svg>
