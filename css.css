@@ -646,7 +646,7 @@ screen-lg-max : 1999px
 }
 @media (max-width: 767px ){
 	.time45{
-		font-size: 110px;
+		font-size: 100px;
 		margin: -230px -10px 0px 0;
 	}
 	.time_dev{
